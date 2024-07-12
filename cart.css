@@ -1,0 +1,68 @@
+/* Basic styling for the shopping cart */
+
+/* Container for the shopping cart */
+.cart {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+}
+
+/* List style for cart items */
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style for each item in the cart */
+.cart li {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Style for the total price */
+.cart .total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Styling for product items */
+
+/* Container for product items */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+/* Individual product card */
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* Button style for adding to cart */
+.product button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.product button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
